@@ -150,6 +150,11 @@ namespace GameplayIngredients.Editor
         {
             Application.OpenURL($"{helpBaseURL}{page}/");
         }
+        
+         static void OpenHelpHtml(string page)
+        {
+            Application.OpenURL($"{helpBaseURL}{page}.html");
+        }
 
         static void OpenHelp()
         {
@@ -160,79 +165,79 @@ namespace GameplayIngredients.Editor
         static void Help_StartPage() { OpenHelp(); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Installing")]
-        static void Help_Install() { OpenHelp("install"); }
+        static void Help_Install() { OpenHelpHtml("install"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Settings Asset")]
-        static void Help_Settings() { OpenHelp("settings"); }
+        static void Help_Settings() { OpenHelpHtml("settings"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Version Compatibility")]
-        static void Help_Versions() { OpenHelp("versions"); }
+        static void Help_Versions() { OpenHelpHtml("versions"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Getting Involved")]
-        static void Help_Contribute() { OpenHelp("engage"); }
+        static void Help_Contribute() { OpenHelpHtml("engage"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Events,Logic and Actions")]
-        static void Help_EventLogicActions() { OpenHelp("events-logic-actions"); }
+        static void Help_EventLogicActions() { OpenHelpHtml("events-logic-actions"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Callables")]
-        static void Help_Callables() { OpenHelp("callable"); }
+        static void Help_Callables() { OpenHelpHtml("callable"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Managers")]
-        static void Help_Managers() { OpenHelp("managers"); }
+        static void Help_Managers() { OpenHelpHtml("managers"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Messager")]
-        static void Help_Messager() { OpenHelp("messager"); }
+        static void Help_Messager() { OpenHelpHtml("messager"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Rigs")]
-        static void Help_Rigs() { OpenHelp("rigs"); }
+        static void Help_Rigs() { OpenHelpHtml("rigs"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/State Machines")]
-        static void Help_StateMachines() { OpenHelp("state-machines"); }
+        static void Help_StateMachines() { OpenHelpHtml("state-machines"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Factories")]
-        static void Help_Factories() { OpenHelp("factories"); }
+        static void Help_Factories() { OpenHelpHtml("factories"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Timers")]
-        static void Help_Timers() { OpenHelp("timers"); }
+        static void Help_Timers() { OpenHelpHtml("timers"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Global and Local Variables")]
-        static void Help_Globals() { OpenHelp("globals"); }
+        static void Help_Globals() { OpenHelpHtml("globals"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Counters")]
-        static void Help_Counters() { OpenHelp("counters"); }
+        static void Help_Counters() { OpenHelpHtml("counters"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Runtime/Interactive")]
-        static void Help_Interactive() { OpenHelp("interactive"); }
+        static void Help_Interactive() { OpenHelpHtml("interactive"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Welcome Screen")]
-        static void Help_WelcomeScreen() { OpenHelp("welcome-screen"); }
+        static void Help_WelcomeScreen() { OpenHelpHtml("welcome-screen"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Play from Here")]
-        static void Help_PlayFromHere() { OpenHelp("play-from-here"); }
+        static void Help_PlayFromHere() { OpenHelpHtml("play-from-here"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Advanced Hierarchy View")]
-        static void Help_AdvHierarchy() { OpenHelp("hierarchy-hints"); }
+        static void Help_AdvHierarchy() { OpenHelpHtml("hierarchy-hints"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Link Game View")]
-        static void Help_LinkGameView() { OpenHelp("link-game-view"); }
+        static void Help_LinkGameView() { OpenHelpHtml("link-game-view"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Scene Point-of-Views")]
-        static void Help_ScenePOV() { OpenHelp("scene-pov"); }
+        static void Help_ScenePOV() { OpenHelpHtml("scene-pov"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Scene Setups")]
-        static void Help_SceneSetups() { OpenHelp("scene-setups"); }
+        static void Help_SceneSetups() { OpenHelpHtml("scene-setups"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Find and Replace")]
-        static void Help_FindReplace() { OpenHelp("find-and-replace"); }
+        static void Help_FindReplace() { OpenHelpHtml("find-and-replace"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Callable tree Explorer")]
-        static void Help_CallableTreeExplorer() { OpenHelp("callable-tree-explorer"); }
+        static void Help_CallableTreeExplorer() { OpenHelpHtml("callable-tree-explorer"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Folders")]
-        static void Help_Folders() { OpenHelp("folders"); }
+        static void Help_Folders() { OpenHelpHtml("folders"); }
 
         [MenuItem("Help/Gameplay Ingredients/Documentation/Editor/Discover")]
-        static void Help_Discover() { OpenHelp("discover"); }
+        static void Help_Discover() { OpenHelpHtml("discover"); }
 
 
         [MenuItem("Help/Gameplay Ingredients/GitHub Repository (Issues and Releases)")]
