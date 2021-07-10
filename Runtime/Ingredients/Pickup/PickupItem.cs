@@ -13,8 +13,7 @@ namespace GameplayIngredients.Pickup
 
         private void OnTriggerEnter(Collider other)
         {
-            var owner = other.gameObject.GetComponent<PickupOwnerBase>();
-            if(owner != null)
+            if(other.gameObject.TryGetComponent(out PickupOwnerBase owner))
             {
                 if(owner.PickUp(this))
                 {

@@ -36,7 +36,7 @@ namespace GameplayIngredients.Editor
                 GUILayout.FlexibleSpace();
             });
 
-            EditorGUILayout.HelpBox("Add Effects to the Pickup Item by adding Pickup Effect Components to this Game Object", MessageType.Info);
+            EditorGUILayout.HelpBox("Add Pickup Effect components to this Game Object to see them appear in the list here", MessageType.Info);
             m_RList.DoLayoutList();
 
 
